@@ -1,38 +1,63 @@
-# 🚨 AI-Based Anomaly Detection in 6G Networks
+# 🚨 AI-Based Anomaly Detection in 6G Communication Networks
 
 ![Banner](Banner.png)
 
-An **AI-powered anomaly detection system** designed to identify abnormal network traffic patterns using the **UNSW-NB15 cybersecurity dataset** and **Isolation Forest algorithm**.
+An AI-powered anomaly detection system designed to identify abnormal network traffic patterns in 6G-like communication environments using machine learning models.
 
-This project demonstrates how **machine learning can enhance network security** by detecting suspicious behavior such as high connectivity attempts and abnormal traffic patterns.
+The system learns normal network traffic behavior and detects deviations such as high connectivity attempts and sudden delay/jitter anomalies.
 
 ---
 
-# 🧠 Technologies Used
+## 📌 Project Overview
+
+Future 6G networks will support ultra-low latency, high data rates, and massive IoT connectivity.  
+Due to the dynamic and complex nature of network traffic, detecting abnormal behavior becomes challenging.
+
+This project proposes a machine learning–based anomaly detection system that analyzes network traffic and identifies abnormal patterns automatically.
+
+---
+
+## 🎯 Key Features
+
+- Network traffic anomaly detection using machine learning
+- Detection of high connectivity attempts and delay/jitter anomalies
+- Data preprocessing and feature engineering
+- Model evaluation using multiple performance metrics
+- Visualization of detected anomalies
+
+---
+
+## 🧠 Technologies Used
+
+**Programming Language**
 
 - Python
+
+**Machine Learning**
+
 - Scikit-learn
+- Isolation Forest
+- One-Class SVM
+
+**Libraries**
+
 - Pandas
 - NumPy
 - Matplotlib
-- Isolation Forest
-- PCA
+- Seaborn
 
 ---
 
-# ⚙️ Features
-
-✔ Data preprocessing and feature engineering  
-✔ Unsupervised anomaly detection using Isolation Forest  
-✔ Network traffic behavior analysis  
-✔ Model evaluation using ROC-AUC and confusion matrix  
-✔ PCA visualization of detected anomalies  
-
----
-
-# 📊 Dataset
+## 📊 Dataset
 
 This project uses the **UNSW-NB15 dataset**, a modern cybersecurity dataset for network intrusion detection.
+
+Dataset characteristics:
+
+- Network traffic dataset
+- 49 features per network flow
+- Includes both normal and attack traffic
+- Used for anomaly detection research
 
 Dataset Source:
 
@@ -40,16 +65,62 @@ https://research.unsw.edu.au/projects/unsw-nb15-dataset
 
 ---
 
-# 📈 Results
+## ⚙️ Methodology
 
-The model successfully identifies abnormal network patterns such as:
+The system follows these steps:
 
-- High connectivity attempts
-- Suspicious traffic behavior
-- Potential intrusion activity
-
-Visualization techniques such as **PCA scatter plots and anomaly score graphs** are used to analyze detected anomalies.
+1. Load UNSW-NB15 dataset  
+2. Data preprocessing  
+   - Handle missing values  
+   - Encode categorical features  
+   - Normalize numerical features  
+3. Train-test split  
+4. Model training using Isolation Forest / One-Class SVM  
+5. Detect anomalies in network traffic  
+6. Evaluate performance using ML metrics  
+7. Visualize anomaly detection results
 
 ---
 
-# 🖥️ Project Workflow
+## 📈 Evaluation Metrics
+
+Model performance is evaluated using:
+
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+- Confusion Matrix
+
+---
+
+## 📂 Project Structure
+
+```
+AI-Anomaly-Detection-6G
+│
+├── anomaly_detection.ipynb
+├── dataset_sample.csv
+├── README.md
+└── banner.png
+```
+
+---
+
+## 🚀 Future Improvements
+
+- Real-time anomaly detection
+- Streamlit dashboard for visualization
+- Deep learning-based detection models
+- Edge-based monitoring for next-generation networks
+
+---
+
+## 👨‍💻 Author
+
+**Fardeen Ali**  
+B.Tech CSE (AI & ML)  
+UPES Dehradun  
+
+GitHub: https://github.com/Fabi-25f  
+LinkedIn: https://linkedin.com/in/fardeen-ali-a73929335/
