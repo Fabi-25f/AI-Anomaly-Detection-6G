@@ -1,6 +1,6 @@
 # 🚨 AI-Based Anomaly Detection in 6G Networks
 
-![Banner](banner.png)
+![Banner](Banner.png)
 
 An **AI-powered anomaly detection system** designed to identify abnormal network traffic patterns using the **UNSW-NB15 cybersecurity dataset** and **Isolation Forest algorithm**.
 
