@@ -1,6 +1,6 @@
 # 🚨 AI-Based Anomaly Detection in 6G Communication Networks
 
-![Banner](Banner.png)
+![Banner](Assets/Banner.png)
 
 An AI-powered anomaly detection system designed to identify abnormal network traffic patterns in 6G-like communication environments using machine learning models.
 
